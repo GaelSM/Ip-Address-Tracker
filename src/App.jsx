@@ -23,7 +23,6 @@ export default function App() {
 
   const inputRef = useRef()
   const formRef = useRef()
-  const API_KEY = "at_hv3UPa3n7TWDomO3dtQd8ACogGBBp"
 
   useEffect(() => {
     if(ip === "192.212.174.101" && domain === "") return
@@ -32,7 +31,7 @@ export default function App() {
         const type = isIp ? "ipAddress" : "domain"
         const information = isIp ? ip : domain
 
-        const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=${API_KEY}&${type}=${information}`)
+        const res = await fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_hv3UPa3n7TWDomO3dtQd8ACogGBBp&${type}=${information}`)
         
         if(!res.ok){
           formRef.current.classList.add("error")
