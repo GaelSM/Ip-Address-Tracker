@@ -25,7 +25,6 @@ export default function App() {
   const formRef = useRef()
 
   useEffect(() => {
-    console.log("A")
     if(ip === "192.212.174.101" && domain === "") return
     try{
       async function getDataByIp(){
