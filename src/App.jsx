@@ -23,7 +23,7 @@ export default function App() {
 
   const inputRef = useRef()
   const formRef = useRef()
-  const API_KEY=at_hv3UPa3n7TWDomO3dtQd8ACogGBBp
+  const API_KEY = "at_hv3UPa3n7TWDomO3dtQd8ACogGBBp"
 
   useEffect(() => {
     if(ip === "192.212.174.101" && domain === "") return
